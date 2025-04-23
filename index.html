@@ -1,38 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
-        <!-- Personal CSS file -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-        <title>Smart About Star Trek</title>
-    </head>
-    <body>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Smart About Star Trek</title>
+</head>
+<body>
+    <navigation>
         <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
             <div class="navbar-header">
-            <!-- Button for user to collapse or uncollapse the navbar -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navLinks">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navLinks">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span> 
-            </button>
-                <a class="navbar-brand" href="#">Smart about Star Trek
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Smart about Star Trek</a>
             </div>
-            <ul class="nav navbar-nav" id="navLinks">
-                <li><a href="games.html">Games</a></li>
+            <div class="collapse navbar-collapse" id="navLinks">
+              <ul class="nav navbar-nav">
                 <li><a href="ships.html">Ships</a></li>
                 <li><a href="characters.html">Characters</a></li>
                 <li><a href="races.html">Races</a></li>
@@ -41,11 +44,40 @@
                 <li><a href="weapons.html">Weapons</a></li>
                 <li><a href="battles.html">Battles</a></li>
                 <li><a href="series.html">Series</a></li>
-            </ul>
+                <li><a href="games.html">Games</a></li>
+              </ul>
+      
+              <!-- Search bar -->
+              <form class="navbar-form navbar-right" onsubmit="siteSearch(); return false;">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="siteSearchInput" placeholder="Search the site...">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+              </form>
+            </div>
+          </div>
         </nav>
-        <div class="container">
-            <h1>Welcome to this page about Star trek</h1>
+      </navigation>
 
-        </div>
-    </body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Home page</h1>
+        <p>Navigate to whatever information you need on Star Trek.</p>
+    </div>
+</div>
+
+<!-- Your Search Script -->
+<script src="script.js"></script>
+
+<!-- Optional: Support for pressing "Enter" key to trigger search -->
+<script>
+  document.getElementById("siteSearchInput").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      siteSearch();
+    }
+  });
+</script>
+
+</body>
 </html>
