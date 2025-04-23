@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+.search-container {
+    margin-bottom: 20px;
+  }
+  
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .navbar-inverse a {
+    color: #020122 !important;
+}
+  .navbar{
+    background-color:#E6E6E6;
+}
