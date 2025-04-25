@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Smart About Star Trek</title>
+    <link rel ="icon" href="images/favicon.png" type="image/png">
+    <!--
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon_32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicons/favicon_48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/images/favicons/favicon_64x64.png">
+    -->
+
+</head>
+<body>
+    <navigation>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo.png" height="50px" style="display: inline-block; vertical-align: middle; margin-right: 10px;">
+                        Smart About Star Trek
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navLinks">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            <div class="collapse navbar-collapse" id="navLinks">
+              <ul class="nav navbar-nav">
+                <li><a href="ships.html">Ships</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li class = "active"><a href="races.html">Races</a></li>
+                <li><a href="systems.html">Systems</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="weapons.html">Weapons</a></li>
+                <li><a href="battles.html">Battles</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href ="other.html">Other</a></li>
+              </ul>
+      
+              <!-- Search bar -->
+              <form class="navbar-form navbar-right" onsubmit="siteSearch(); return false;">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="siteSearchInput" placeholder="Search the site...">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </navigation>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Races</h1>
+        <p>Learn about the different races and cultures within Star Trek</p>
+    </div>
+</div>
+
+
+<footer>
+    <div class = "container-fluid footer">
+        <div class = "row">
+            <div  class = "col-sm-4 text-center">
+                scources
+                <ul style="list-style-position: inside;">
+                    <li>scource of info 1</li>
+                    <li>scource of info 2</li>
+                    <li>scource of info 3</li>
+                    <li>scource of info 4</li>
+                    <li>scource of info 5</li>
+                </ul>
+            </div>
+            <div  class = "col-sm-4 text-center">
+                references
+                <ul style="list-style-position: inside;">
+                    <li>person 1</li>
+                    <li>person2</li>
+                    <li>person3</li>
+                    <li>person4</li>
+                    <li>person5</li>
+                </ul>
+            </div>
+            <div  class = "col-sm-4 text-center">
+                contact info
+                <div class="d-inline-block">
+                    <table class="table table-borderless" >
+                        <tr>
+                            <th>First Name</th>
+                            <td>Zachariah</td>
+                        </tr>
+                        <tr>
+                            <th>Last Name</th>
+                            <td>[Classified]</td>
+                        </tr>
+                        <tr>
+                            <th>Phone Number</th>
+                            <td>[Classified]</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>[Classified]</td>
+                        </tr>
+                        <tr>
+                            <th>Fax</th>
+                            <td><a href = "https://youtu.be/pxDgQJBVJxg?si=vGbSgo16WiOVvHBQ" style = "color:#E6E6E6;">what is a fax</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Your Search Script -->
+<script src="script.js"></script>
+
+<!-- Optional: Support for pressing "Enter" key to trigger search -->
+<script>
+  document.getElementById("siteSearchInput").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      siteSearch();
+    }
+  });
+</script>
+
+</body>
+</html>
