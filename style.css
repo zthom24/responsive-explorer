@@ -20,3 +20,6 @@ body {
   .navbar{
     background-color:#E6E6E6;
 }
+.navbar-brand{
+  padding-top: 0;
+}
