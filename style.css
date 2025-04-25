@@ -23,3 +23,14 @@ body {
 .navbar-brand{
   padding-top: 0;
 }
+.footer{
+  background-color: #020122;
+  color:#E6E6E6;
+}
+.table{
+  width: 75%; 
+  max-width: 100%; 
+  margin-bottom: 20px; 
+  display: block; 
+  margin: 0 auto;
+}
