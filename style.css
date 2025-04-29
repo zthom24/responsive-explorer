@@ -14,19 +14,51 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-.navbar-inverse a {
-    color: #020122;
-}
-
+/* Navbar container */
 .navbar {
     background-color: #E6E6E6;
+    border-color: #ccc;
 }
 
+/* Navbar brand and links */
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: #020122;
+}
 .navbar-brand {
     padding-top: 0;
 }
+/* Hover state */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #444477;
+}
 
+/* Active link */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #020122;
+    background-color: #dcdcdc;
+}
+
+/* Toggle button for mobile */
+.navbar-default .navbar-toggle {
+    border-color: #020122;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #020122;
+}
+
+/* Optional: Search button styling */
+.navbar-form .btn {
+    background-color: #fff;
+    color: #020122;
+    border: 1px solid #020122;
+}
+.navbar-form .btn:hover {
+    background-color: #f0f0f0;
+}
 .footer {
     background-color: #020122;
     color: #E6E6E6;
@@ -40,15 +72,4 @@ body {
     margin: 0 auto;
 }
 
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover {
-    color: #020122;
-    background-color: white;
-}
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>a:hover {
-    color: #020122;
-}
+    
