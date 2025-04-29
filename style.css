@@ -77,4 +77,20 @@ body {
   .btn-block {
     text-align: left;
   }
+  /* Default colors */
+  .red{
+    color:#B73B2E;
+  }
+  .yellow{
+    color:#e3b505;
+  }
+  .blue{
+    color:#058ed9;
+  }
+  .dark{
+    color:#020122;
+  }
+  .light{
+    color:#E6E6E6;
+  }
     
