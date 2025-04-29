@@ -12,6 +12,10 @@ const pages = [
 ];
 
 let pageIndex = [];
+if (window.location.protocol === "file:") {
+  alert("This site is being opened directly from a file (file://).\n\nFor full functionality like search, please launch it using a local web server (e.g., Live Server in VS Code or Python's http.server).");
+}
+console.warn("You're running the site from file:// — this may block features like fetch(). Please use a local web server.");
 
 async function buildIndex() {
   if (pageIndex.length > 0) return pageIndex;
@@ -72,3 +76,7 @@ async function siteSearch() {
   }
 }
   // WILL NOT WORK WHEN LAUNCHING FROM A FILE
+  // launch from VS code and install this https://marketplace.visualstudio.com/items/?itemName=ritwickdey.LiveServer
+  // then right click on any HTML file and select "Open with Live Server"
+  // this will launch a local server and open the file in your browser
+  // this will allow the fetch to work properly
