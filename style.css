@@ -71,5 +71,10 @@ body {
     display: block;
     margin: 0 auto;
 }
-
+.dropdown-section {
+    margin-top: 20px;
+  }
+  .btn-block {
+    text-align: left;
+  }
     
