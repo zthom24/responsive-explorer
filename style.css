@@ -77,6 +77,12 @@ body {
   .btn-block {
     text-align: left;
   }
+
+  /* image rounding */
+  img {
+    border-radius: 10%;
+  }
+
   /* Default colors */
   .red{
     color:#B73B2E;
